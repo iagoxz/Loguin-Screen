@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lexend Deca',sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lexend Deca', sans-serif;
 }
 
 :root {
-    --white: #FFF;
+  --white: #FFF;
   --whitesmoke: #F9F9F9;
   --light-grey: #ECECEC;
   --grey: #C4C4C4;
@@ -19,84 +19,91 @@
   --red: #CF3C3F;
 }
 
-main{
+main {
   display: flex;
 }
 
 .login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 500px;
-    min-height: 100vh;
-    padding: clamp(30px, 7%, 60px);
-  }
-
-.login__logo{
-    width: 130px;
-    margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+  min-height: 100vh;
+  padding: clamp(35px, 8%, 70px);
 }
 
-.login__title{
-    color: var(--deepgray);
-    font-size: 1.5em;
-    margin-bottom: 30px;
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login__logo {
+  width: 130px;
+  margin-bottom: 80px;
+}
+
+.login__title {
+  color: var(--deep-grey);
+  font-size: 1.5em;
+  margin-bottom: 30px;
 }
 
 .login__label {
-    display: block;
-    margin-bottom: 20px;
-    width: 100%;
-  }
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+}
 
-  .input {
-    width: 100%;
-    background-color: var(--light-grey);
-    border: 2px solid rgba(0, 0 , 0, 0);
-    border-radius: 5px;
-    outline: none;
-    font-size: 0.9em;
-    padding: 25px 10px 10px;
-    font-weight: 600;
-    color: var(--deep-grey);
-  }
+.input {
+  width: 100%;
+  background-color: var(--light-grey);
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  outline: none;
+  font-size: 0.9em;
+  padding: 25px 10px 10px;
+  font-weight: 600;
+  color: var(--deep-grey);
+}
 
-  .login__label span{
-    position: absolute;
-    font-size: 0.8em;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: var(--medium-grey);
-    margin: 20px;
-    cursor: text;
-    transition: all 200ms ease;
-  }
+.login__label span {
+  position: absolute;
+  font-size: 0.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--medium-grey);
+  margin: 20px;
+  cursor: text;
+  transition: all 200ms ease;
+}
 
-.input:focus{
-    background-color: var(--whitesmoke);
-    border: 2px solid var(--deep-grey);
+.input:focus {
+  background-color: var(--whitesmoke);
+  border: 2px solid var(--deep-grey);
 }
 
 .login__label .span-active {
-    font-size: 0.7em;
-    margin-top: 0px 10px;
+  font-size: 0.7em;
+  margin: 8px 10px;
 }
 
-.loguin__icons{
+.login__icons {
   display: flex;
   gap: 10px;
   width: 100%;
   margin-top: 20px;
-  
 }
 
-.loguin__icons img {
+.login__icons img {
   width: 20px;
 }
 
-.icon__button {
+.icons__button {
   width: 33.33%;
   display: flex;
   align-items: center;
@@ -107,29 +114,25 @@ main{
   border: none;
 }
 
-.loguin__icons .icon__button:nth-child(1){
+.login__icons .icons__button:nth-child(1) {
   background-color: var(--blue);
-
 }
 
-.loguin__icons .icon__button:nth-child(2){
-  background-color: var(--grey);
-  
+.login__icons .icons__button:nth-child(2) {
+  background-color: var(--light-grey);
 }
 
-.loguin__icons .icon__button:nth-child(3){
+.login__icons .icons__button:nth-child(3) {
   background-color: var(--black);
-  
 }
 
-.loguin__label --checkbox{
+.login__label--checkbox {
   width: 100%;
   margin: 15px 0 50px;
   font-size: 0.9em;
   font-weight: 500;
   display: flex;
   align-items: center;
-
 }
 
 .input--checkbox {
@@ -170,11 +173,11 @@ main{
   margin-bottom: 60px;
 }
 
-.login__button svg{
+.login__button svg {
   fill: white;
 }
 
-.login__button :disabled{
+.login__button:disabled {
   cursor: auto;
   background-color: white;
   border: 2px solid var(--light-grey);
@@ -193,18 +196,10 @@ main{
   font-weight: 700;
 }
 
-.walppaper{
+.wallpaper {
   width: 100%;
   background-image: url('./images/jettwlpp.jpg');
   background-size: cover;
   background-position: center;
   flex: 1;
-}
-
-.wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
